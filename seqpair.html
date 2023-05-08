@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DNA ANALYZER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/seqpair.css">
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+	<!-- Navigation/Title Bar -->
+	<div class="navbar">
+		<a class="active" href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<a  href="index.html">Random Sequence Generator</a>
+		<a class="active-link" href="seqpair.html">Sequence Pair Generator</a>
+		<a  href="dnamatch.html">DNA Mathing</a>
+	</div>
+
+
+	<!-- Main Content -->
+	<div class="main">
+		<div class="container">
+			<h1> DNA Sequence Pair Generator</h1>
+		    <form onsubmit="generatePair(); return false;">
+                <label for="dna-seq">Enter the DNA Sequence:</label>
+                <textarea id="dna-seq" name="dna-seq" ></textarea>
+				<button type="submit">Generate Sequence</button>
+			</form>
+			<label for="result">Result:</label>
+			<textarea id="result" name="result" readonly></textarea>
+		</div>
+	</div>
+
+    <!-- JavaScript -->
+    <script src="js/seqpair.js"></script>
+</body>
+</html>

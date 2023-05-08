@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DNA ANALAYSER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dnamatch.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+	<!-- Navigation/Title Bar -->
+	<div class="navbar">
+		<a class="active" href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<a  href="index.html">Random Sequence Generator</a>
+		<a href="seqpair.html">Sequence Pair Generator</a>
+		<a   class="active-link" href="dnamathch.html">DNA Mathing</a>
+	</div>
+
+
+	<!-- Main Content -->
+	<div class="main">
+		<div class="container">
+			<h1> DNA Sequence Pair Generator</h1>
+		    <form onsubmit="matchPair(); return false;">
+                <label for="dna-seq1">Enter the 1st DNA Sequence:</label>
+                <textarea id="dna-seq1" name="dna-seq1" ></textarea>
+                <label for="dna-seq2">Enter the 2nd DNA Sequence:</label>
+                <textarea id="dna-seq2" name="dna-seq2" ></textarea>
+				<button type="submit">Generate Sequence</button>
+			</form>
+			<label for="result">Result:</label>
+			<span id="result"></span>
+		</div>
+	</div>
+
+    <!-- JavaScript -->
+    <script src="js/dnamatch.js"></script>
+</body>
+</html>
