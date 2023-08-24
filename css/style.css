@@ -1,3 +1,8 @@
+*{
+    padding:0px;
+    marign:0px;
+    
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
         background-color: rgba(230, 229, 173, 0.5);
